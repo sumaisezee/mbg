@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My MBG Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #000; color: #fff; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #fff, #666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-6">
+        <h1 data-aos="fade-up" class="text-6xl md:text-8xl font-extrabold mb-4 gradient-text">
+            MOMENTS.
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 text-lg md:text-xl max-w-lg">
+            Kumpulan cerita dan visual yang dikurasi dalam satu tempat.
+        </p>
+    </section>
+
+    <section class="py-20 bg-zinc-950">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-right" class="text-3xl font-bold mb-10">Selected Works</h2>
+            
+            <div class="flex overflow-x-auto space-x-6 pb-10 scrollbar-hide">
+                <div data-aos="zoom-in" class="flex-none w-72 md:w-96">
+                    <div class="h-96 rounded-2xl overflow-hidden glass-card group">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000" alt="Camera" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100" class="flex-none w-72 md:w-96">
+                    <div class="h-96 rounded-2xl overflow-hidden glass-card group">
+                        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?q=80&w=1000" alt="Visual" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200" class="flex-none w-72 md:w-96">
+                    <div class="h-96 rounded-2xl overflow-hidden glass-card group">
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1000" alt="Self" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div data-aos="fade-up" class="p-8 rounded-3xl glass-card">
+                <h3 class="text-2xl font-bold mb-4">The Vision</h3>
+                <p class="text-gray-400">Menangkap setiap detik bukan sekadar hobi, tapi cara kita membekukan waktu yang tidak akan terulang kembali.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="p-8 rounded-3xl glass-card border-white/20">
+                <h3 class="text-2xl font-bold mb-4">The Tech</h3>
+                <p class="text-gray-400">Dibuat dengan sentuhan modern untuk pengalaman visual yang mulus di semua perangkat.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-zinc-900">
+        <p class="text-zinc-600">Built for Visual Storytelling &copy; 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    </script>
+</body>
+</html>
+)
